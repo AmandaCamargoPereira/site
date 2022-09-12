@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0 auto;
     font-family:Verdana, sans-serif;
@@ -10,7 +14,7 @@ header{
     background-color: rgb(131, 0, 238);
     display: table;
     box-shadow: -4px -70px 1px rgb(60, 59, 65);
-    padding: 10px;
+
 }
 
 header h1{
@@ -29,6 +33,7 @@ header h1{
 /*---------- MENU ----------*/
 .menu{
     width: 100%;
+    position: relative;
 }
 
 .menu ul{
@@ -56,12 +61,61 @@ header h1{
 /*-------- FIM MENU --------*/
 
 
+main{
+    position: relative;
+}
 
-main img{
+
+.img1{
     background-image: url(neon.jpg);
-    height: 700px;
+    height: 850px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+}
+.img2{
+    background-image: url(neon2.jpg);
+    height: 850px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.conteiner{
+    width: 500px;
+    margin: auto;
+}
+
+.conteiner img{
+    width: 800px;
+    height: 550px;
+    top: 60px;
+    display: inline-block;
+     position: absolute;
+    opacity: .5 ;
+    border-radius: 30px;
+    left: 550px;
+}
+
+.conteiner div{
+    color: aliceblue;
+    padding: 20px;
+    top: 10%;
+    position: absolute;
+    left: 460px;
+    font-size: 30px;
+    text-shadow: blanchedalmond;
+}
+
+
+.titulo{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
 
 
@@ -73,6 +127,7 @@ footer{
     background-color: rgb(131, 0, 238);
     position: absolute;
 	bottom: 0;
+    top: 1760px;
 }
 
 footer p{
