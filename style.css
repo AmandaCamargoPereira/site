@@ -33,14 +33,14 @@ header h1{
 /*---------- MENU ----------*/
 .menu{
     width: 100%;
-    position: relative;
 }
 
 .menu ul{
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
     background-color: rgb(8, 8, 8);
+    text-align: center;
 }
 
 .menu ul li{
@@ -50,7 +50,10 @@ header h1{
 .menu ul li a{
     color:rgb(255, 255, 255);
     text-decoration: none;
-    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: inline-block; /*Permite bloco li a totalmente clicavel*/
     transition: background .4s;
 }
@@ -58,6 +61,26 @@ header h1{
 .menu ul li a:hover{
     background-color: rgba(168, 17, 255, 0.452);
 }
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    text-align: justify;
+    z-index: 1;
+    background-color:  #cc6ce694;
+    width: 0;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul ul{
+    width: 201px;
+}
+.menu ul ul li a{
+    display: block;
+}
+
 /*-------- FIM MENU --------*/
 
 
@@ -90,25 +113,72 @@ main{
     margin: auto;
 }
 
-.conteiner img{
-    width: 1200px;
-    height: 550px;
-    top: 540px;
+.conteiner #p1{
+    width: 1150px;
+    height: 500px;
+    top: 160px;
     display: inline-block;
      position: absolute;
     opacity: .5 ;
     border-radius: 30px;
-    left: 350px;
+    left: 92px;
 }
 
+.conteiner #p2{
+    width: 320px;
+    height: 350px;
+    top: 800px;
+    display: inline-block;
+     position: absolute;
+    opacity: .5 ;
+    border-radius: 30px;
+    left: 92px;
+    box-shadow: -8px 8px rgba(32, 32, 32, 0.993);
+}
+.conteiner #p3{
+    width: 320px;
+    height: 350px;
+    top: 800px;
+    display: inline-block;
+     position: absolute;
+    opacity: .5 ;
+    border-radius: 30px;
+    left: 510px;
+    box-shadow: -8px 8px rgba(32, 32, 32, 0.993);
+}
+
+.conteiner #p4{
+    width: 320px;
+    height: 350px;
+    top: 800px;
+    display: inline-block;
+     position: absolute;
+    opacity: .5 ;
+    border-radius: 30px;
+    left: 930px;
+    box-shadow: -8px 8px rgba(32, 32, 32, 0.993);
+}
+
+.conteiner #p5{
+    width: 1150px;
+    height: 200px;
+    top: 1300px;
+    display: inline-block;
+     position: absolute;
+    opacity: .5 ;
+    border-radius: 30px;
+    left: 92px;
+}
+
+
 .conteiner div{
-    color: aliceblue;
+    color: rgb(238, 234, 234);
     padding: 20px;
-    top: 580px;
+    top: 110px;
     position: absolute;
-    left: 460px;
-    font-size: 30px;
-    text-shadow: blanchedalmond;
+    left: 140px;
+    font-size: 35px;
+    font-family: cursive;
 }
 
 
@@ -116,6 +186,7 @@ main{
     position: absolute;
     bottom: 8px;
     left: 16px;
+    text-shadow: 0px 3.2px rgb(69, 1, 124);
 }
 
 
